@@ -1,0 +1,138 @@
+
+.secao_rodape {
+    background-color: #1F2732;
+    padding: 15px;
+    max-width: 1024px;
+    margin: 40px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    justify-content: center;
+    align-items: center;
+}
+
+.info {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 768px) {
+    .info {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .container_logo, .navegacao {
+        width: 100%;
+    }
+}
+
+.container_logo {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 10px;
+    background-color: transparent;
+}
+
+.logo {
+    width: 80px;
+    height: auto;
+    background-color: transparent;
+}
+
+.paragrafo {
+    width: 80%;
+    min-width: 250px;
+    font-size: 20px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.navegacao {
+    display: flex;
+    width: 50%;
+    flex-wrap: wrap;
+}
+
+.lista {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 20px;
+    padding: 0;
+}
+
+.item {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.item_paragrafo {
+    font-size: 18px;
+    color: #FFFFFF;
+}
+
+.icon {
+    font-size: 24px;
+    color: #2C9C9C;
+    background-color: transparent;
+}
+
+.subtitulo {
+    font-size: 30px;
+    color: #FFFFFF;
+}
+
+.mapa_container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+
+@media (max-width: 768px) {
+    .logo {
+        width: 80px;
+        height: auto;
+        background-color: transparent;
+        position: absolute;
+        left: 10px;
+    }
+    .paragrafo {
+        width: 100%;
+    }
+    .lista {
+        gap: 10px;
+    }
+    .item_paragrafo {
+        font-size: 16px;
+    }
+    
+    .icon {
+        font-size: 20px;
+    }
+  
+}
+@media (max-width: 600px) {
+    .logo {
+        display: none;
+    }
+    .container_logo {
+        width: 100%;
+    }
+    .paragrafo {
+        width: 100%;
+    }
+  
+}

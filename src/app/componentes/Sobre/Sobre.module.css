@@ -1,0 +1,113 @@
+
+.sobreContainer {
+    display: flex;
+    width: 1024px;
+    margin: 0 auto;
+    height: 600px;
+    background: linear-gradient(to bottom, #1F2732, #2C3E50);
+    color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  
+  .imageContainer {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .advogadoImage {
+    width: 100%;
+    max-width: 350px;
+    border-radius: 8px;
+  }
+  
+  .advogadoImage1 {
+    display: none;
+  }
+  .advogadoImage2 {
+    display: none;
+  }
+  
+  .textContainer {
+    flex: 2;
+    padding: 30px;
+    border-radius: 15px;
+  }
+  
+  .titulo {
+    font-size: 32px;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  
+  .paragrafo {
+    font-size: 20px;
+    letter-spacing: 2px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+  }
+  
+  @media (max-width: 1024px) {
+    .sobreContainer {
+      flex-direction: column;
+      height: auto;
+      width: 100%;
+      padding: 15px;
+    }
+    
+    .imageContainer {
+      order: -1;
+    }
+    
+    .advogadoImage {
+      max-width: 250px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .titulo {
+      font-size: 30px;
+    }
+    
+    .paragrafo {
+      font-size: 18px;
+      letter-spacing: normal;
+    }
+    .advogadoImage {
+      display: none;
+    }
+    .advogadoImage2 {
+      display: block;
+    }
+    
+}
+
+
+  @media (max-width: 600px) {
+    .sobreContainer {
+      flex-direction: column;
+      height: auto;
+      width: 100%;
+      padding: 15px;
+    }
+    
+    .imageContainer {
+      order: -1;
+    }
+    
+    .advogadoImage1 {
+      display: block;
+      border-radius: 10px;
+    }
+    .advogadoImage2 {
+      display: none;
+    }
+    
+  }
+  

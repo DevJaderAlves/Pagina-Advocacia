@@ -1,0 +1,158 @@
+
+  .secao_topo {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #1f2732;
+    z-index: 1000;
+}
+
+.container_topo{
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+.navBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    border-bottom: 2px solid #4e4e4e;
+}
+
+.logoContainer {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 80px;
+    height: auto;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    font-weight: bold;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: rgb(255, 250, 173);
+    transition: 0.3s;
+}
+
+.menu li a:hover {
+    color: #C99B52;
+}
+
+.consultaButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-items: center;
+    gap: 10px;
+    background: #a37418;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.icon svg{
+  font-size: 20px;
+  background: #a37418;
+  color: rgb(255, 250, 173);
+}
+
+.consultaButton a {
+    text-decoration: none;
+    color: rgb(255, 250, 173);
+    font-size: 18px;
+    background: #a37418;
+}
+.consultaButton:hover a {
+  color: #C99B52;
+}
+
+.redes_sociais {
+    display: flex;
+    justify-content: space-between;
+    background-color: #5B350C;
+    align-items: center;
+    padding: 5px 15px;
+}
+
+
+.brand {
+  border-radius: 4px;
+  padding: 5px;
+  font-weight: bold;
+  text-decoration: none;
+  background-color: #5B350C;
+}
+.brand a{
+  color: rgb(255, 250, 173);
+  background-color: #5B350C;
+}
+.brand a:hover{
+  color: #A97842;
+}
+
+
+.socialIcons {
+    display: flex;
+    gap: 10px;
+    background-color: #5B350C;
+}
+
+.socialIcons svg {
+    color: rgb(255, 250, 173);
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #5B350C;
+}
+.socialIcons a{
+  text-decoration: none;
+  background-color: #5B350C;
+}
+
+.socialIcons svg:hover {
+    color: #A97842;
+}
+
+/* Espaço abaixo do header fixo */
+.spacer {
+    height: 120px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .navBar {
+        flex-direction: column;
+    }
+
+    .menu {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+  .consultaButton {
+        margin-top: 10px;
+    }
+    .spacer {
+      height: 220px;
+  }
+  .logo {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 70px;
+    height: auto;
+}
+  
+}
